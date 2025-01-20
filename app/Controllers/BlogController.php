@@ -5,7 +5,9 @@ class BlogController
 {
     public function index()
     {
-        echo "Blog";
+        echo "Blog! ";
+        $listArticles = new \App\Models\BlogModel();
+        $listArticles->list();
     }
 }
 
