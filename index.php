@@ -10,6 +10,7 @@
         require "./vendor/autoload.php";
         use Core\ConfigController as HomeController;
         $url = new HomeController();
+        $url->isLoad();
     ?>
 </body>
 </html>

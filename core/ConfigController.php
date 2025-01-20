@@ -26,6 +26,12 @@ class ConfigController
             $this->urlController = "home";
             $this->urlMethod = "index";
         }
-        echo "Controller: {$this->urlController} - Método: {$this->urlMethod}";
     }
-}
+
+    public function isLoad() {
+        $urlController = ucwords($this->urlController);
+        $isClass = "\\App\\Controllers\\" . $urlController;
+        $isClassLoad = new $isClass;
+        $isClassLoad->index();
+    }
+} 
