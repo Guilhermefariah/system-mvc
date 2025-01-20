@@ -1,0 +1,15 @@
+{
+    "description": "Projeto MVC",
+    "authors": [
+        {
+            "name": "Guilherme Faria",
+            "email": "guilherme@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {}
+}
